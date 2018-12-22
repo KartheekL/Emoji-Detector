@@ -1,2 +1,3 @@
 # Emoji-Detector
-The first project
+
+Used CNN to detect the hand gesture and show the corresponding emoji.
