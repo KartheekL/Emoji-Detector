@@ -64,8 +64,8 @@ def main(g_id):
 
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         cv2.putText(frame, str(pic_no), (30, 400), cv2.FONT_HERSHEY_TRIPLEX, 1.5, (127, 127, 255))
-        cv2.imshow("Capturing gesture", frame)
-        cv2.imshow("thresh", thresh)
+        cv2.imshow("Capturing Gesture", frame)
+        cv2.imshow("Thresh", thresh)
         keypress = cv2.waitKey(1)
         if keypress == ord('c'):
             if flag_start_capturing == False:
@@ -77,10 +77,10 @@ def main(g_id):
             frames += 1
         if pic_no == total_pics:
             break
-    cv2.destroyWindow("Capturing gesture")
-    cv2.destroyWindow("thresh")
+    cv2.destroyWindow("Capturing Gesture")
+    cv2.destroyWindow("Thresh")
     cap.release()
 
 
-g_id = input("Enter gesture number: ")
+g_id = input("Enter the gesture number: ")
 main(g_id)
